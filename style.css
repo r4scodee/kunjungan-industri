@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -34,7 +35,6 @@ header .navbar {
 .navbar .logo {
   text-decoration: none;
   display: flex;
-  gap: 20px;
   justify-content: center;
 }
 
@@ -62,6 +62,25 @@ header .navbar {
 .navbar .link .link-menu:hover {
   color: #000;
   background-color: #2c54bad5;
+}
+
+.button{
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #2c54bad5;
+  color: #fff;
+  transition: all .5s ease;
+}
+
+.button:hover{
+  background-color: rgb(193, 44, 44);
+}
+
+.button a{
+  text-decoration: none;
+  color: #fff;
 }
 
 .hero-section {
@@ -202,10 +221,74 @@ header .navbar {
 }
 
 
-footer p{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+footer{
+  background-color: #222;
   text-align: center;
-  width: 100%;
-  padding: 30px;
-  background-color: #333;
-  color: #fff;
+  font-size: 15px;
+  color: #888;
+  padding: 0 30px 10px 0;
 }
